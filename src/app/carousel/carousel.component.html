@@ -1,0 +1,27 @@
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <!-- Slide-uri -->
+  <div class="carousel-inner">
+  <div *ngFor="let item of carouselItems; let i = index" [class.active]="i === 0" class="carousel-item">
+    <div class="row">
+      <div *ngFor="let link of item.links" class="col-4">
+        <a *ngIf="link.href" [href]="link.href" target="_blank">
+          <img [src]="link.imgSrc" class="d-block w-100" [alt]="link.alt">
+        </a>
+        <img *ngIf="!link.href" [src]="link.imgSrc" class="d-block w-100" [alt]="link.alt">
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    <!-- Butoane de control -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  

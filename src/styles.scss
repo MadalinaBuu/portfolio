@@ -1,1 +1,97 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'variables';
+
+body {
+    background-color: $cream;
+
+    .container {
+        padding-top: 3rem;
+
+        .title-section {
+            text-align: center;
+            padding-left: 15rem;
+            padding-right: 15rem;
+
+            h2 {
+                font-weight: bold;
+                padding-bottom: 1rem;
+            }
+        }
+
+        .skills-section {
+            padding: 20px;
+            margin-bottom: 20px;
+
+            .skill-box {
+                position: relative;
+                padding: 20px;
+                margin-bottom: 15px;
+                //background-color: #fce6d4;
+                border-radius: 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                min-height: 150px;
+                /* Înălțime minimă egală pentru toate secțiunile */
+
+
+                /* Stil pentru SVG-ul din colțul dreapta sus */
+                .corner-svg {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    // width: 30px;
+                    // height: 30px;
+                    //fill: #666; /* Culoare pentru SVG */
+                }
+
+                h4 {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 10px;
+                }
+            }
+
+            .skill-box:hover {
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+                /* Adaugă o umbră */
+                transform: translateY(-5px);
+                /* Ridică box-ul ușor */
+            }
+        }
+
+        .box-1 {
+            min-height: 315px !important;
+            background-color: #f3b0c3;
+        }
+
+        .box-2 {
+            background-color: #cce2cb;
+        }
+
+        .box-3 {
+            background-color: #ffffb5;
+        }
+
+        .box-4 {
+            background-color: #a2e1db;
+        }
+
+        .box-5 {
+            background-color: #cbaacb;
+        }
+    }
+}
+
+/* Tablet and Mobile */
+@media (max-width: 992px) {
+    body {
+        .container {
+            .skills-section {
+                .skill-box {
+                    min-height: 250px !important;
+                }
+            }
+        }
+    }
+}
