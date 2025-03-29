@@ -51,7 +51,7 @@ export const carouselItems = [
           alt: 'Slide 5',
         },
         {
-          href: 'https://paulalexefotograf.web.app/',//TODO:M:put another example
+          href: 'https://paulalexefotograf.web.app/',
           imgSrc: 'assets/ap-portfolio.png',
           alt: 'Slide 6',
         },
