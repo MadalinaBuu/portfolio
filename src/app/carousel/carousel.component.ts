@@ -12,4 +12,8 @@ import { CommonModule } from '@angular/common';
 export class CarouselComponent {
 
   public carouselItems = carouselItems;
+
+  isMobile(): boolean {
+    return window.innerWidth < 770;
+  }
 }
