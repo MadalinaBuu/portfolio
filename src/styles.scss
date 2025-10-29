@@ -87,6 +87,11 @@ body {
 @media (max-width: 992px) {
     body {
         .container {
+            .title-section {
+                text-align: center;
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
             .skills-section {
                 .skill-box {
                     min-height: 250px !important;
@@ -95,3 +100,15 @@ body {
         }
     }
 }
+
+// @media (max-width: 770px) {
+//     body {
+//         .container {
+//             .title-section {
+//                 text-align: center;
+//                 padding-left: 1rem;
+//                 padding-right: 1rem;
+//             }
+//         }
+//     }
+// }
