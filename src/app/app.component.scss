@@ -1,15 +1,73 @@
-.description-section{
+.description-section {
     padding-top: 2rem;
     padding-bottom: 3rem;
 }
 
-.work-section{
+.work-section {
     padding-top: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
-.conclusion-section{
+.conclusion-section {
     padding-bottom: 2rem;
     text-align: center;
+}
+
+.github-inline {
+    display: inline-flex;
+    align-items: center;
+    color: #cbaacb;
+    text-decoration: none;
+    font-weight: bold;
+
+    i {
+        margin-right: 0.5rem;
+        font-size: 1.2em;
+    }
+
+    &:hover {
+        color: lighten(#cbaacb, 10%);
+    }
+}
+
+.email-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: #cbaacb;
+  color: #fff;
+  border: 2px solid #cbaacb;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  i {
+    margin-right: 0.5rem;
+    font-size: 1.1em;
+  }
+
+  &:hover {
+    background-color: #b890b9;  // mai închis la hover
+    border-color: #b890b9;
+    color: #fff;
+  }
+
+  &:active {
+    background-color: #a36f9f;  // și mai închis la click
+    border-color: #a36f9f;
+    transform: translateY(1px); // efect subtil de apăsare
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(203, 170, 203, 0.5);
+  }
+}
+
+.intro-text {
+    font-size: 1.05rem;
+    line-height: 1.6;
 }
