@@ -5,9 +5,9 @@
   <div class="carousel-inner">
     <div *ngFor="let item of carouselItems; let i = index" [class.active]="i === 0" class="carousel-item">
       <div class="row">
-        <div *ngFor="let link of (isMobile() ? [item.links[0]] : item.links)" class="col-12 col-md-4">
+        <div *ngFor="let link of item.links" class="col-12 col-md-4">
           <a *ngIf="link.href" [href]="link.href" target="_blank">
-            <img [src]="link.imgSrc" class="d-block w-100" [alt]="link.alt">
+            <img [src]="link.imgSrc" class="d-block w-100 mb-3 mb-md-0" [alt]="link.alt">
           </a>
           <img *ngIf="!link.href" [src]="link.imgSrc" class="d-block w-100" [alt]="link.alt">
         </div>
