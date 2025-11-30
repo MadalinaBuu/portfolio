@@ -1,76 +1,93 @@
 <!-- Compact VERSION (About Page) -->
 <div *ngIf="compact" class="about compact row">
-    <div class="col-md-6" style="text-align: center;">
-      <img src="assets/pic1.jpg" class="rounded-circle" style="width: 40%;" alt="Round image">
-    </div>
+  <div class="col-md-6" style="text-align: center;">
+    <img src="assets/pic1.jpg" class="rounded-circle" style="width: 40%;" alt="Round image">
+  </div>
 
-    <div class="col-md-6" style="padding-left: 4rem; padding-right: 4rem; text-align: center;">
-      <h3>I'm Madalina, excited to work on your next project</h3>
+  <div class="col-md-6" style="padding-left: 4rem; padding-right: 4rem; text-align: center;">
+    <h3>I'm Madalina, excited to work on your next project</h3>
+    <br>
+
+    <p class="intro-text">
+      I love creating simple, user-friendly web apps and turning ideas into reality.
       <br>
-
-      <p class="intro-text">
-        I love creating simple, user-friendly web apps and turning ideas into reality.
-        <br>
-        Check out some of my work on
-        <a href="https://github.com/madalinabuu" target="_blank" class="github-inline">
-          <i class="bi bi-github"></i> GitHub
-        </a>.
-        <br>
-        If you think we'd make a great team, feel free to send me an email! 💛
-      </p>
-      <a href="mailto:madalina.ciucioiu@gmail.com" class="btn btn-info email-btn">
-        <i class="bi bi-envelope-fill"></i> Send Email
-      </a>
-    </div>
+      Check out some of my work on
+      <a href="https://github.com/madalinabuu" target="_blank" class="github-inline">
+        <i class="bi bi-github"></i> GitHub
+      </a>.
+      <br>
+      If you think we'd make a great team, feel free to send me an email! 💛
+    </p>
+    <a href="mailto:madalina.ciucioiu@gmail.com" class="btn btn-info email-btn">
+      <i class="bi bi-envelope-fill"></i> Send Email
+    </a>
+  </div>
 </div>
 
 <!-- FULL VERSION (About Page) -->
 <div *ngIf="!compact" class="about-full container">
   <div class="row align-items-center">
-    
-    <!-- Left Column (Image) -->
+
     <div class="col-md-4 text-center">
       <img src="assets/pic1.jpg" class="about-img-large" alt="Madalina">
     </div>
 
-    <!-- Right Column (Intro) -->
     <div class="col-md-8">
-      <h2 class="section-title">About Me</h2>
-
       <p class="intro-big">
         Hi! I’m Madalina — a passionate full-stack developer who loves transforming ideas into clean,
         elegant, and efficient web applications.
       </p>
+      <div class="section-block text-center">
+        <h3>Let’s Connect</h3>
+        <p>If you'd like to collaborate or just say hello, feel free to reach out!</p>
+
+        <a href="mailto:madalina.ciucioiu@gmail.com" class="email-btn large">
+          <i class="bi bi-envelope-fill"></i> Get in Touch
+        </a>
+      </div>
     </div>
   </div>
 
-  <!-- Separator -->
   <hr class="section-divider" />
 
-  <!-- Journey -->
   <div class="section-block">
     <h3>My Journey</h3>
     <p>
-      With over nine years of experience, I've worked on a wide range of projects including enterprise
-      platforms, responsive websites, internal tools, and digital products used by thousands of users.
-      I enjoy solving problems, designing intuitive interfaces, and improving performance.
+      I have over nine years of experience working on a variety of web projects, from internal tools to responsive
+      websites. I’ve worked on both backend and frontend development, mainly with .NET, SQL, and Angular. I enjoy
+      building complete solutions, improving performance, and creating user-friendly interfaces.
     </p>
   </div>
 
-  <!-- Technologies -->
   <div class="section-block">
     <h3>Technologies I Work With</h3>
     <ul class="tech-grid">
-      <li>Angular / TypeScript</li>
-      <li>.NET Core</li>
-      <li>SCSS, HTML5</li>
-      <li>REST APIs</li>
-      <li>SQL, Entity Framework</li>
-      <li>Responsive & Accessible UI</li>
+      <li>
+        <i class="fab fa-angular"></i>
+        Angular / TypeScript
+      </li>
+      <li>
+        <i class="fas fa-cogs"></i>
+        .NET Core
+      </li>
+      <li>
+        <i class="fab fa-html5"></i>
+        SCSS, HTML5
+      </li>
+      <li>
+        <i class="fas fa-code"></i>
+        REST APIs
+      </li>
+      <li>
+        <i class="fas fa-database"></i>
+        SQL, Oracle
+      </li>
+      <li>
+        <i class="fas fa-mobile-alt"></i>
+        Responsive & Accessible UI
+      </li>
     </ul>
   </div>
-
-  <!-- What I Love -->
   <div class="section-block">
     <h3>What I Love</h3>
     <p>
@@ -78,15 +95,4 @@
       I’m also a big fan of collaboration and turning complex requirements into simple, elegant solutions.
     </p>
   </div>
-
-  <!-- Contact -->
-  <div class="section-block text-center">
-    <h3>Let’s Connect</h3>
-    <p>If you'd like to collaborate or just say hello, feel free to reach out!</p>
-
-    <a href="mailto:madalina.ciucioiu@gmail.com" class="email-btn large">
-      <i class="bi bi-envelope-fill"></i> Get in Touch
-    </a>
-  </div>
-
 </div>
