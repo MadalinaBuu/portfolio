@@ -5,12 +5,17 @@ body {
     background-color: $cream;
 
     .container {
-        padding-top: 3rem;
+        padding-top: 1rem;
 
         .title-section {
             text-align: center;
             padding-left: 15rem;
             padding-right: 15rem;
+
+            h1 {
+                padding-bottom: 1rem;
+
+            }
 
             h2 {
                 font-weight: bold;
@@ -92,11 +97,12 @@ body {
                 padding-left: 1rem;
                 padding-right: 1rem;
 
-                h1{
+                h1 {
                     font-weight: 700;
                     margin-bottom: 1.5rem;
                 }
             }
+
             .skills-section {
                 .skill-box {
                     min-height: 250px !important;

@@ -1,6 +1,13 @@
 .about {
   text-align: center;
   padding: 0 2rem;
+
+  .details{
+    padding-top:1.5rem; 
+    padding-left: 2rem; 
+    padding-right: 2rem; 
+    text-align: center;
+  }
 }
 
 
@@ -115,7 +122,7 @@
     list-style: none;
     padding: 1.5rem;
     margin: 0 auto;
-    background-color: #fffebf;
+    background-color: #ffffb5;
     border-radius: 1rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 
