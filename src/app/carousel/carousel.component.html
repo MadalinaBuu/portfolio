@@ -9,10 +9,16 @@
       <div *ngFor="let item of carouselItems; let i = index" [class.active]="i === 0" class="carousel-item">
         <div class="row">
           <div *ngFor="let link of item.links" class="col-12 col-md-4">
-            <a *ngIf="link.href" [href]="link.href" target="_blank">
-              <img [src]="link.imgSrc" class="d-block w-100 mb-3 mb-md-0" [alt]="link.alt">
+            <a *ngIf="link.href" [href]="link.href" target="_blank" class="portfolio-card">
+              <img [src]="link.imgSrc" [alt]="link.alt" />
+
+              <div class="portfolio-overlay">
+                <h3>{{ link.title }}</h3>
+                <p class="description">{{ link.description }}</p>
+                <p class="tech">{{ link.tech }}</p>
+                <span class="cta">View live ↗</span>
+              </div>
             </a>
-            <img *ngIf="!link.href" [src]="link.imgSrc" class="d-block w-100" [alt]="link.alt">
           </div>
         </div>
       </div>

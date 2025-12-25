@@ -1,24 +1,103 @@
 .carousel {
-  padding-top: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 2rem;
-}
-
-.carousel-item img {
-  height: 350px;
-  border-radius: 5%;
+  padding: 2rem 1rem;
 }
 
 .carousel-detail {
-  padding: 0 0 2rem 0;
+  padding-bottom: 2rem;
   text-align: center;
   font-size: 1.1rem;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .carousel-explanation {
   padding: 1rem 1.5rem;
-  font-size: 12px;
+  font-size: 0.75rem;
   text-align: center;
+  opacity: 0.8;
+}
+
+.carousel-item {
+  .row {
+    align-items: stretch;
+  }
+}
+
+.portfolio-card {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    border-radius: inherit;
+    transition: transform 0.4s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.05);
+  }
+
+  &:hover .portfolio-overlay {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.portfolio-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.5rem;
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.35s ease;
+
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .description {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    opacity: 0.9;
+  }
+
+  .tech {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+  }
+
+  .cta {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-card img {
+    height: 250px;
+  }
+
+  .portfolio-overlay {
+    padding: 1rem;
+  }
 }
